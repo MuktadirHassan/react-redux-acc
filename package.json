@@ -1,0 +1,15 @@
+{
+  "name": "Class0",
+  "version": "1.0.0",
+  "description": "1. What & why?\r 2. Environment Setup\r 3. Declarations\r 4. Types\r 5. Functions\r 6. Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
