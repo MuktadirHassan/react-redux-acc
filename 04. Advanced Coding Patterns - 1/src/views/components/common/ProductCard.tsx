@@ -1,14 +1,17 @@
-import React from "react";
-
+import image from "./img.jpg";
 export const ProductCard = ({ product }: { product: any }) => {
   return (
-    <div>
-      <div>
-        <img src="" alt="" />
+    <div className="p-4 border rounded-lg">
+      <div className="relative pb-60">
+        <img
+          src={image}
+          className="absolute object-cover w-full h-full"
+          alt=""
+        />
       </div>
-      <div>
-        <h4>{product}</h4>
-        <p>Product Price</p>
+      <div className="pt-3">
+        <h4>Nikon 445D - Latest Edition</h4>
+        <p className="text-lg font-semibold">356 $</p>
       </div>
     </div>
   );

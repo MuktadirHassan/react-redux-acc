@@ -3,7 +3,7 @@ import ProductService from "../../../services/Product.service";
 import { DSlider } from "../../components/custom/DSlider";
 import { ProductsArray } from "../../components/home/ProductsArray";
 const Home = () => {
-  const [products, setProducts] = useState<[] | any[]>([]);
+  const [products, setProducts] = useState<[] | any[]>([1, 2, 3, 4, 5, 9]);
 
   useEffect(() => {
     ProductService.getAllProducts()
