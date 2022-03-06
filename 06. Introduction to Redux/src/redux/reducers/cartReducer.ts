@@ -1,19 +1,25 @@
-import { ActionType, CartAction } from "redux/types";
+// action -> add to cart
+// action type ??
+// add to cart -> state modify
+// return state
 
-const cartReducer = (
-  state: IProduct[] = [],
-  action: CartAction
-): IProduct[] => {
+import { cartActionType } from "redux/actions/cartAction";
+import { cartActionTypes } from "redux/types";
+
+// dipatcher -> dispatch -> {type: 'add_to_cart', payload: {}}
+
+function cartReducer(state: IProduct[] = [], action: cartActionType) {
   switch (action.type) {
-    case ActionType.ADD_TO_CART:
+    case cartActionTypes.ADD_TO_CART:
       return [...state, action.payload];
-    case ActionType.REMOVE_FROM_CART:
-      return state.filter((item) => item._id !== action.payload);
-    case ActionType.CLEAR_CART:
+    case cartActionTypes.REMOVE_FROM_CART:
+      const newState = state.filter((item) => item._id !== action.payload);
+      return newState;
+    case cartActionTypes.CLEAR_CART:
       return [];
     default:
       return state;
   }
-};
+}
 
 export default cartReducer;
