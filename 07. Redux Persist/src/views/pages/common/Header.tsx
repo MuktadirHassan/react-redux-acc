@@ -16,6 +16,9 @@ export const Header = () => {
             <Link to="/cart" className="mr-3 text-gray-800">
               Cart
             </Link>
+            <Link to="/login" className="mr-3 text-gray-800">
+              Login
+            </Link>
           </div>
           <input
             type="text"

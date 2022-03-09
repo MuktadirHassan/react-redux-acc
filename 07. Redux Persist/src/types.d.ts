@@ -7,3 +7,12 @@ interface IProduct {
   price: number;
   store: string;
 }
+
+interface IUserData {
+  name: string;
+  email: string;
+  id: string;
+  role: string;
+  status: string;
+  token: string;
+}
