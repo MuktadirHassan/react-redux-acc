@@ -1,0 +1,24 @@
+src -
+	- services/api
+	- assets
+	- hooks
+	- redux
+	- routes
+	- scss
+	- views
+		- pages
+			- Home
+			- Login
+			- Contact
+			- TheLayout.js
+		- components
+			- reuseable
+			- custom
+	- utils
+
+eslit-config-perttier eslint-plugin-prettier prettier -D
+
+pretty-quick --staged
+
+
+

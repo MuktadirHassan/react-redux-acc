@@ -1,0 +1,7 @@
+1. Use react-typescript 🙌
+2. Create a TODO Application (Name it anything you want) 👌
+	a. Must be able to add new items
+	b. remove existing items.
+	c. should persist on reload (Use local storage)
+3. Use any online framework and their type definitions 😍 example: MUI/ChakraUI
+4. Be as creative as you want and explore the typescript world.
